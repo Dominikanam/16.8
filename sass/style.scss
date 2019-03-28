@@ -2,4 +2,146 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
+
+[class*=col-] {
+	float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::before,
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	background-color: #000000;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+}
+
+.container {
+    padding: 0;
+    position: relative;
+	margin: 0 auto;
+}
+
+// nav - menu //
+
+nav {
+	.logo {
+		display: inline-block;
+		height: 50px;
+		margin-left: 50px;
+	}
+
+	.menu {
+		float: right;
+		font-size: 16px;
+		margin-top: 20px;
+
+		ul li {
+			list-style: none;
+			padding: 10px;
+			display: inline-block;
+			height: 72px;
+
+			&:hover {
+				border-bottom: 5px solid #B78C59;
+			}
+
+			a {
+				text-decoration: none;
+				font-weight: bold;
+				color: #ffffff;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+// header //
+
+header {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),  url(/images/wood.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+
+	h1 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 70px;
+		text-align: center;
+		font-weight: bold;
+		text-shadow: 0 0 3px white;
+	}
+
+	h2 {
+		color: #B78B5C;
+		text-transform: uppercase;
+		font-size: 70px;
+		text-align: center;
+		font-weight: bold;
+		text-shadow: 0 0 3px #B78B5C;
+	}
+
+	p {
+		color: white;
+		text-transform: uppercase;
+		font-size: 20px;
+		text-align: center;
+		font-weight: bold;
+		text-shadow: 0 0 3px white;
+	}
+
+	button {
+		background-color: #B98B59;
+		box-shadow: 0 0 3px #B98B59;
+		border: none;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+		height: 40px;
+		width: 200px;
+		border-radius: 50px;
+		margin: 0 auto;
+	}
+
+	.pagination {
+		color: #B98B59;
+		text-align: center;
+	}
+}
+
+// services //
+
+// project //
+
+
+// team //
+
+// facts //
+
+// 	contact //
+
+
+// social //
