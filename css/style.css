@@ -568,4 +568,74 @@ section.premium button {
   margin: 20px auto;
   display: block;
 }
+
+section.premium .feature {
+  padding: 50px;
+}
+
+section.premium .feature div {
+  display: table;
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+section.premium .feature i {
+  color: #B98B59;
+  font-size: 50px;
+  float: left;
+  margin-left: 100px;
+}
+
+section.premium .feature h3 {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+section.premium .feature p {
+  color: #AEAEAE;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+section.facts {
+  color: white;
+  text-align: center;
+}
+
+section.facts > div {
+  padding: 50px;
+}
+
+section.facts > div .numbers {
+  padding: 20px;
+}
+
+section.facts > div .numbers h2 {
+  font-size: 55px;
+  padding: 20px;
+  color: #B98B59;
+  font-weight: 800;
+}
+
+section.facts > div .numbers hr {
+  width: 10%;
+  border-color: #797979;
+  background-color: #797979;
+  margin: 0 auto;
+  border-top: #797979;
+  height: 5px;
+}
+
+section.facts > div .numbers h3 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+section.facts > div .numbers p {
+  color: #797979;
+  font-size: 14px;
+  text-align: justify;
+  padding: 20px;
+}
 /*# sourceMappingURL=style.css.map */
