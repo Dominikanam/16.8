@@ -77,12 +77,45 @@ body {
   padding: 0;
   position: relative;
   margin: 0 auto;
+  width: 80%;
+}
+
+h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 50%;
+  color: #AEAEAE;
+}
+
+.pagination {
+  color: #B98B59;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.pagination .circle {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 2px solid #B98B59;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.pagination .circle:hover {
+  background-color: #B98B59;
 }
 
 nav .logo {
   display: inline-block;
   height: 50px;
-  margin-left: 50px;
 }
 
 nav .menu {
@@ -110,25 +143,26 @@ nav .menu ul li a {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/wood.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(/images/wood.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
 }
 
-header h1 {
+header .title1 {
+  padding-top: 250px;
   color: white;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 90px;
   text-align: center;
   font-weight: bold;
   text-shadow: 0 0 3px white;
 }
 
-header h2 {
+header .title2 {
   color: #B78B5C;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 95px;
   text-align: center;
   font-weight: bold;
   text-shadow: 0 0 3px #B78B5C;
@@ -140,10 +174,15 @@ header p {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
+  padding: 30px;
   text-shadow: 0 0 3px white;
 }
 
-header button {
+header div {
+  padding: 40px;
+}
+
+header div button {
   background-color: #B98B59;
   box-shadow: 0 0 3px #B98B59;
   border: none;
@@ -154,10 +193,379 @@ header button {
   width: 200px;
   border-radius: 50px;
   margin: 0 auto;
+  display: block;
 }
 
-header .pagination {
-  color: #B98B59;
+section.aboutUs {
+  background-color: #F7F7F7;
   text-align: center;
+}
+
+section.aboutUs div {
+  padding: 50px;
+}
+
+section.aboutUs div p {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+section.aboutUs div button {
+  background-color: #B98B59;
+  box-shadow: 0 0 3px #B98B59;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border-radius: 50px;
+  float: left;
+}
+
+section.aboutUs div .video img {
+  height: 350px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.services {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+section.services h1 {
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+section.services h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #AEAEAE;
+  padding-bottom: 50px;
+}
+
+section.services ul {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.services ul li {
+  border-left: 2px solid #383838;
+  float: none;
+  padding: 10px;
+}
+
+section.services ul li:last-of-type {
+  border-right: 2px solid #383838;
+}
+
+section.services ul li img {
+  padding: 15px;
+}
+
+section.services ul h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+section.services ul p {
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+  color: #797979;
+}
+
+section.project {
+  background-color: #F7F7F7;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+section.project .btn-group {
+  display: block;
+  margin: 50px auto;
+  padding: 0 10px;
+  border-radius: 30px;
+  background-color: #EDEDED;
+  border: 1px solid #CFCFCF;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.project .btn-group button {
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  color: black;
+  cursor: pointer;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #CFCFCF;
+  padding: 10px;
+}
+
+section.project .btn-group button:first-of-type {
+  margin-left: 10px;
+}
+
+section.project .btn-group button:last-of-type {
+  border: none;
+  margin-right: 10px;
+}
+
+section.project .btn-group button:hover {
+  border-bottom: 5px solid #B78C59;
+}
+
+section.project li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+section.project li .picture {
+  position: relative;
+  margin: 0 auto;
+  height: 160px;
+  width: 250px;
+}
+
+section.project li .picture img {
+  width: 100%;
+  height: 100%;
+}
+
+section.project li .picture .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+section.project li .picture .overlay .text {
+  color: white;
+  padding: 30px;
+}
+
+section.project li .picture .overlay .text h1 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+section.project li .picture .overlay .text p {
+  font-size: 12px;
+}
+
+section.project li .picture:hover .overlay {
+  display: block;
+}
+
+section.project .more {
+  background-color: #B98B59;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border-radius: 50px;
+  display: block;
+  margin: 30px  auto;
+}
+
+section.team {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/city.jpg);
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+section.team ul {
+  list-style-type: none;
+  margin: 20px auto;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.team ul li {
+  padding: 20px;
+  float: none;
+}
+
+section.team ul li .photo {
+  padding: 40px 10px;
+  max-width: 350px;
+  background-color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+section.team ul li .photo h3 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+section.team ul li .photo .icon-btn {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: #AEAEAE;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+section.team ul li .photo .icon-btn:hover {
+  background-color: #B98B59;
+}
+
+section.team h1 {
+  color: white;
+}
+
+section.happyClients {
+  background-color: #F7F7F7;
+  text-align: center;
+}
+
+section.happyClients .joe {
+  padding: 30px;
+  height: 300px;
+  width: 300px;
+}
+
+section.happyClients h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section.happyClients img {
+  padding: 20px;
+}
+
+section.happyClients .pagination {
+  padding: 20px;
+}
+
+section.sponsors {
+  background-color: white;
+  border-top: 1px solid #797979;
+  border-bottom: 1px solid #797979;
+}
+
+section.sponsors > div {
+  text-align: center;
+}
+
+section.sponsors > div img {
+  margin: 50px;
+}
+
+section.price {
+  text-align: center;
+  background-color: #EDEDED;
+  color: #373737;
+  padding-bottom: 30px;
+}
+
+section.price ul {
+  list-style-type: none;
+  display: block;
+  margin-top: 30px;
+}
+
+section.price ul li {
+  padding: 20px;
+  border-radius: 3px;
+}
+
+section.price ul li > div {
+  background: white;
+  padding: 20px;
+}
+
+section.price ul li > div h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+section.price ul li > div h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section.price ul li > div h5 {
+  color: grey;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+section.price ul li > div p {
+  font-size: 11px;
+}
+
+section.price ul li > div button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 170px;
+  background-color: #373737;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+section.price ul li > div button:hover {
+  background-color: #B98B59;
+}
+
+section.premium {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+section.premium > div:first-of-type {
+  border-bottom: 1px solid #EDEDED;
+}
+
+section.premium img {
+  height: 500px;
+  width: 500px;
+  padding: 10px;
+}
+
+section.premium button {
+  background-color: #B98B59;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border-radius: 50px;
+  margin: 20px auto;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
