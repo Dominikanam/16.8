@@ -570,7 +570,7 @@ section.premium button {
 }
 
 section.premium .feature {
-  padding: 50px;
+  padding-top: 100px;
 }
 
 section.premium .feature div {
@@ -637,5 +637,192 @@ section.facts > div .numbers p {
   font-size: 14px;
   text-align: justify;
   padding: 20px;
+}
+
+section.socialInfo {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #797979;
+}
+
+section.socialInfo ul {
+  list-style-type: none;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.socialInfo ul li {
+  padding: 10px;
+}
+
+section.socialInfo ul li .tell {
+  font-size: 20px;
+}
+
+section.socialInfo ul li p {
+  color: #AEAEAE;
+  font-size: 14px;
+  display: inline-block;
+}
+
+section.socialInfo ul li button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 0 #ffffff;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+section.socialInfo ul li .icon-btn.usb {
+  background-color: white;
+  color: #AEAEAE;
+  font-size: 25px;
+}
+
+section.socialInfo ul li .icon-btn.twitter {
+  background-color: #36C5F1;
+}
+
+section.socialInfo ul li .icon-btn.linkedin {
+  background-color: #137CB3;
+}
+
+section.socialInfo ul li .icon-btn.facebook {
+  background-color: #336296;
+}
+
+section.socialInfo ul li .icon-btn.google-plus {
+  background-color: #EA4237;
+}
+
+section.socialInfo ul li .icon-btn.pinterest {
+  background-color: #B81C29;
+}
+
+section.contact {
+  background-color: #F7F7F7;
+  text-align: center;
+}
+
+section.contact form {
+  padding: 50px;
+  max-width: 700px;
+}
+
+section.contact form .person, section.contact form .subject, section.contact form .message {
+  padding: 20px;
+}
+
+section.contact form input {
+  border: none;
+  border-bottom: 2px solid #AEAEAE;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+section.contact form button {
+  background-color: #B98B59;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border-radius: 50px;
+  margin: 50px;
+}
+
+section.map {
+  background-image: url(/images/map.jpg);
+  background-size: cover;
+  padding: 50px 0;
+}
+
+section.map ul {
+  background-color: white;
+  list-style-type: none;
+  padding: 50px;
+}
+
+section.map ul li {
+  padding: 10px 0;
+}
+
+section.map ul li img, section.map ul li p {
+  display: inline;
+  vertical-align: middle;
+}
+
+section.map ul li p {
+  padding: 5px;
+  color: #797979;
+  font-size: 15px;
+}
+
+footer {
+  color: white;
+  padding: 50px !important;
+}
+
+footer .icon-btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: #373737;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+footer .icon-btn:hover {
+  background-color: #B98B59;
+}
+
+footer h3 {
+  text-transform: uppercase;
+}
+
+footer p {
+  font-size: 12px;
+  color: #797979;
+  margin-right: 60px;
+}
+
+footer .subscribe {
+  background-color: #373737;
+  border-radius: 3px;
+}
+
+footer .subscribe input, footer .subscribe button {
+  display: block;
+  border: none;
+  margin: 40px auto;
+}
+
+footer .subscribe input {
+  text-align: center;
+  border-bottom: 2px solid #797979;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+footer .subscribe button {
+  background-color: #B98B59;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=style.css.map */
