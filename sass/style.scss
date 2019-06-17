@@ -43,6 +43,7 @@ body {
     position: relative;
 	margin: 0 auto;
 	width: 80%;
+	max-width: 1200px;
 }
 
 h1 {
@@ -807,3 +808,72 @@ footer {
 		}
 	}
 }
+
+@media (max-width: 1200px) {
+	.menu {
+		ul {
+			display: flex;
+			text-align: center;
+		}
+	}
+	section.aboutUs div .video img {
+		height: auto;
+	}
+}
+
+@media (max-width: 1000px) {
+	.menu {
+		ul {
+			display: inherit;
+			text-align: center;
+		}
+	}
+	section.aboutUs div {
+		width: auto;
+		text-align: center;
+		.video {
+			img {
+			height: auto;
+			}
+		}
+	}
+	body > section.project > ul {
+		display: initial;
+		li {
+			display: contents;
+		}
+	}
+	body > section.team > ul {
+		display: initial;
+			li {
+				margin: 0 auto;
+			}
+	}
+	body > section.price > ul {
+		display: contents;
+	}
+	body > section.project > ul {
+		display: grid;
+		li {
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+	body > section.price > ul > li > div {
+		padding: 10px 0;
+		button {
+			width: 80px;
+		}
+	}
+	body > footer > div.text.col-4 > p {
+		display: none;
+	}
+	body > section.facts {
+		display: none;
+	}
+	body > footer > div.subscribe.col-4 {
+		float: right;
+		width: 200px;
+	}
+}
+
